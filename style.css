@@ -134,3 +134,38 @@ color:#eee;
 .container{grid-template-columns:1fr}
 .hero-slider{height:300px}
 }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.topbar .left button {
+  font-size: 24px;
+  margin-right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0055a5;
+}
+
+.btn-subscribe {
+  background: #0055a5;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link {
+  margin-left: 12px;
+  color: #0055a5;
+  text-decoration: none;
+  font-weight: bold;
+}
