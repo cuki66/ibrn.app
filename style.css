@@ -1,0 +1,164 @@
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:#f5f5f5;
+  color:#111;
+}
+
+/* Header */
+.topbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:white;
+  border-bottom:1px solid #ddd;
+}
+
+.logo {
+  font-size:24px;
+  font-weight:bold;
+  color:red;
+}
+
+nav a {
+  margin:0 10px;
+  text-decoration:none;
+  color:#333;
+  font-weight:500;
+}
+
+.auth-btn a {
+  margin-left:10px;
+  text-decoration:none;
+}
+
+.btn-red {
+  background:red;
+  color:white;
+  padding:8px 15px;
+  border-radius:5px;
+}
+
+/* Breaking */
+.breaking-wrapper {
+  display:flex;
+  align-items:center;
+  background:#d40000;
+  color:white;
+  padding:10px 40px;
+}
+
+.breaking-label {
+  font-weight:bold;
+  margin-right:15px;
+}
+
+.breaking-text {
+  animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Hero */
+.hero {
+  position:relative;
+  height:500px;
+  overflow:hidden;
+}
+
+.hero img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-content {
+  position:absolute;
+  bottom:40px;
+  left:40px;
+  color:white;
+  background:rgba(0,0,0,0.5);
+  padding:20px;
+  border-radius:10px;
+}
+
+/* Layout */
+.container {
+  display:flex;
+  padding:40px;
+}
+
+.main-news {
+  flex:3;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+}
+
+.news-card {
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.news-card img {
+  width:100%;
+}
+
+.news-card h3 {
+  padding:10px;
+}
+
+.news-card p {
+  padding:0 10px 10px;
+  font-size:14px;
+  color:#555;
+}
+
+.sidebar {
+  flex:1;
+  margin-left:30px;
+}
+
+.sidebar ul {
+  list-style:none;
+  padding:0;
+}
+
+.sidebar li {
+  padding:8px 0;
+  border-bottom:1px solid #ddd;
+}
+
+.live-tv iframe {
+  width:100%;
+  height:200px;
+  margin-top:10px;
+  border-radius:10px;
+}
+
+footer {
+  text-align:center;
+  padding:20px;
+  background:#111;
+  color:white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .container {
+    flex-direction:column;
+  }
+  .main-news {
+    grid-template-columns:1fr;
+  }
+  .sidebar {
+    margin-left:0;
+    margin-top:30px;
+  }
+}
